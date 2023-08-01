@@ -4,10 +4,6 @@ import { ExpenseState, deleteExpense, updateExpense } from '../services/reducers
 import { Expense } from './ExpenseForm';
 import { useAppDispatch } from '../helper/hooks';
 
-type EditObj = {
-
-}
-
 const ExpenseTable: React.FC = () => {
   const dispatch = useAppDispatch()
   const [state, setState] = useState({ editItem :{} as Expense } );
@@ -24,7 +20,7 @@ const ExpenseTable: React.FC = () => {
     
   }
 
-  const handleSave = ( item: Expense) => {
+  const handleSave = ( ) => {
     setState({...state, editItem: {  ...editItem, id: 0 }});
     dispatch(updateExpense(editItem))
   }
@@ -58,7 +54,7 @@ const ExpenseTable: React.FC = () => {
                         <td><input name='amount' onChange={handleUpdate} type="number" placeholder='Amount' value={state.editItem.amount}/></td>
                         <td><input name='date' onChange={handleUpdate} type="date" value={state.editItem.date} /></td>
                         <td>
-                          <button onClick={ () => handleSave(item) } className='border px-3 rounded-md border-white'>Save</button>
+                          <button onClick={ () => handleSave() } className='border px-3 rounded-md border-white'>Save</button>
                           <button className='border px-3 rounded-md border-white mx-2'>Cancel</button>
                         </td>
                       </tr>

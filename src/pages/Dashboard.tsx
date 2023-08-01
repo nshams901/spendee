@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Portfolio from '../components/Portfolio'
-import HeadingCard from '../components/ExpenseTable'
 import { useAppDispatch } from '../helper/hooks'
 import { fetchNseStocks } from '../services/actions/expenseAction'
 import ExpenseTable from '../components/ExpenseTable'

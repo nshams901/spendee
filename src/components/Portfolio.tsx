@@ -49,7 +49,7 @@ const Portfolio: React.FC = () => {
             <div className='mt-6'>
 
                 {
-                    [1, 2, 3, 5].map((item) => {
+                    [1, 2, 3, 5].map(() => {
                         return (
                             <div className='flex justify-between py-5'>
                             </div>
