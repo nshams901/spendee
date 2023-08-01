@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+input {
+  @apply  bg-[#343435] mx-2 p-2 rounded-lg outline-none focus:outline-none
+}
+td input {
+  @apply bg-[#343435] border border-white py-1 my-1 max-w-[130px] rounded-lg outline-none focus:outline-none
+}
+.btn {
+  @apply border text-right border-white px-3 py-1 rounded-md  
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+  color: rgba(255, 255, 255);
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
