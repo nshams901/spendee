@@ -35,10 +35,10 @@ const ExpenseForm: React.FC = () => {
     }
     
     return (
-        <div className='mt-6 text-end'>
+        <div className='mt-6 text-end mb-2'>
             {
                 form ?
-                    <div className='w-full flex justify-between'>
+                    <div className='w-full flex justify-between flex-wrap gap-2 mb-2'>
                         <input onChange={ handleChange } name='title' value={formData?.title} type="text" placeholder='Description'/>
                         <input onChange={ handleChange } name='amount' value={formData?.amount} type="number" placeholder='Amount' />
                         <input onChange={handleChange } name='date' value={formData?.date} type="date" />

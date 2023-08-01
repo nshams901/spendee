@@ -29,11 +29,11 @@ const ExpenseTable: React.FC = () => {
     dispatch(deleteExpense(item))
   }
   return (
-    <div className='bg-gradient-to-br from-[#3f3f3f] to-black/90 h-full max-h-full rounded-lg w- p-3 px-10'>
+    <div className='bg-gradient-to-br overflow-auto from-[#3f3f3f] to-black/90 h-full max-h-full rounded-lg mt-3 md:mt-0 p-3 md:px-10'>
       <div className='flex justify-between'>
         <p>You expenses</p>
       </div>
-      <table className='w-full mt-3 overflow-auto'>
+      <table className='w-full mt-3 overflow-auto '>
         <thead>
           <tr>
             <th className='border-b-2 text-left border-white px-3 py-1'>Description</th>
