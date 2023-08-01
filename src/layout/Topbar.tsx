@@ -1,5 +1,4 @@
-import React from 'react'
-import SearchField from '../components/SearchField'
+
 
 const Topbar = () => {
     return (
